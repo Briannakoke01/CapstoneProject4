@@ -1,0 +1,41 @@
+/* Ensure that the body takes full height and centers everything */
+body {
+    margin: 0;
+    height: 100vh;  /* Full viewport height */
+    display: flex;
+    justify-content: center;  /* Horizontally center content */
+    align-items: center;      /* Vertically center content */
+    background-color: #f0f0f0; /* Optional: Set a background color */
+}
+
+/* Container for the input fields */
+.input-container {
+    display: flex;               /* Use Flexbox */
+    flex-direction: column;      /* Stack items vertically */
+    gap: 2in;                    /* Set a 2-inch gap between text boxes */
+    align-items: center;         /* Center the entire input-container */
+    width: 100%;                 /* Full width for the container */
+    text-align: center;          /* Center text inside inputs */
+}
+
+/* Row for Top and Bottom Text inputs */
+.text-row {
+    display: flex;               /* Use flexbox to place top and bottom text side by side */
+    gap: 1in;                    /* 1-inch gap between the inputs */
+    justify-content: center;     /* Center the top and bottom text horizontally */
+}
+
+/* Styling for individual input fields */
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;                /* Width for the top and bottom text inputs */
+}
+
+/* Specific class for the third input field */
+.input-container .third-input {
+    width: 400px;                /* Combined width of top and bottom inputs (200px + 200px) */
+    margin-top: 20px;            /* Add a little margin-top for spacing */
+}

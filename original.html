@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>APIMeme - Generate Meme - 1st World Canadian Problems</title>
+   
+
+    <link rel="stylesheet" href="/static/css/bootstrap.css"/>
+    <link rel="icon" href="/static/img/logo.png"/>
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="/static/js/bootstrap.js"></script>
+</head>
+<body>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <form role="form" style="margin-bottom: 20px">
+                
+                <input type="hidden" id="meme" value="1st-World-Canadian-Problems">
+
+                
+              <div class="form-group">
+                <label for="top-text"></label>
+                <input type="text" class="form-control" id="top-text" placeholder="Top Text">
+              </div>
+              <div class="form-group">
+                <label for="top-text"></label>
+                <input type="text" class="form-control" id="bottom-text" placeholder="Bottom Text">
+              </div>
+              <div class="form-group" style="display: none;">
+                <label for="top-text">Link</label>
+                <input type="text" class="form-control" id="api-link" readonly>
+        
+
+              </div>
+              <button type="submit" class="btn btn-primary">Generate</button>
+                <button type="button" class="btn btn-primary" onclick="download()"><i class="fa fa-download"></i> Download</button>
+            </form>
+
+        </div>
+        <div class="col-lg-6">
+            
+            <img id="meme-image" src="data:," alt style="display: block; margin: 0 auto; max-width: 100%">
+        </div>
+
+    </div>
+    <div class="row">
+        <h1>Create Your Own Meme</h1>
+        <hr/>
+        <div class="col-lg-12">
+            
+                
+                <a href="/create/10-Guy" style="width: 150px; height: 150px; float: left; margin-top: 10px; margin-right: 10px">
+                    <div style="height: 100px"><img style="display: block; margin: 0 auto" src="https://apimeme.com/thumbnail?name=10-Guy"></div>
+                    <div style="text-align: center">10 Guy</div>
+                </a>
+            
+                
+                <a href="/create/1950s-Middle-Finger" style="width: 150px; height: 150px; float: left; margin-top: 10px; margin-right: 10px">
+                    <div style="height: 100px"><img style="display: block; margin: 0 auto" src="https://apimeme.com/thumbnail?name=1950s-Middle-Finger"></div>
+                    <div style="text-align: center">1950s Middle Finger</div>
+                </a>
+            
+                
+                <a href="/create/1990s-First-World-Problems" style="width: 150px; height: 150px; float: left; margin-top: 10px; margin-right: 10px">
+                    <div style="height: 100px"><img style="display: block; margin: 0 auto" src="https://apimeme.com/thumbnail?name=1990s-First-World-Problems"></div>
+                    <div style="text-align: center">1990s First World Problems</div>
+                </a>
+            
+                
+                <a href="/create/1st-World-Canadian-Problems" style="width: 150px; height: 150px; float: left; margin-top: 10px; margin-right: 10px">
+                    <div style="height: 100px"><img style="display: block; margin: 0 auto" src="https://apimeme.com/thumbnail?name=1st-World-Canadian-Problems"></div>
+                    <div style="text-align: center">1st World Canadian Problems</div>
+                </a>
+            
+                
+                <a href="/create/2nd-Term-Obama" style="width: 150px; height: 150px; float: left; margin-top: 10px; margin-right: 10px">
+                    <div style="height: 100px"><img style="display: block; margin: 0 auto" src="https://apimeme.com/thumbnail?name=2nd-Term-Obama"></div>
+                    <div style="text-align: center">2nd Term Obama</div>
+                </a>
+            
+                
+                <a href="/create/Aaaaand-Its-Gone" style="width: 150px; height: 150px; float: left; margin-top: 10px; margin-right: 10px">
+                    <div style="height: 100px"><img style="display: block; margin: 0 auto" src="https://apimeme.com/thumbnail?name=Aaaaand-Its-Gone"></div>
+                    <div style="text-align: center">Aaaaand Its Gone</div>
+                </a>
+            
+                
+                <a href="/create/Ace-Primo" style="width: 150px; height: 150px; float: left; margin-top: 10px; margin-right: 10px">
+                    <div style="height: 100px"><img style="display: block; margin: 0 auto" src="https://apimeme.com/thumbnail?name=Ace-Primo"></div>
+                    <div style="text-align: center">Ace Primo</div>
+                </a>
+            
+                
+                <a href="/create/Actual-Advice-Mallard" style="width: 150px; height: 150px; float: left; margin-top: 10px; margin-right: 10px">
+                    <div style="height: 100px"><img style="display: block; margin: 0 auto" src="https://apimeme.com/thumbnail?name=Actual-Advice-Mallard"></div>
+                    <div style="text-align: center">Actual Advice Mallard</div>
+                </a>
+            
+                
+                <a href="/create/Adalia-Rose" style="width: 150px; height: 150px; float: left; margin-top: 10px; margin-right: 10px">
+                    <div style="height: 100px"><img style="display: block; margin: 0 auto" src="https://apimeme.com/thumbnail?name=Adalia-Rose"></div>
+                    <div style="text-align: center">Adalia Rose</div>
+                </a>
+            
+                
+                <a href="/create/Admiral-Ackbar-Relationship-Expert" style="width: 150px; height: 150px; float: left; margin-top: 10px; margin-right: 10px">
+                    <div style="height: 100px"><img style="display: block; margin: 0 auto" src="https://apimeme.com/thumbnail?name=Admiral-Ackbar-Relationship-Expert"></div>
+                    <div style="text-align: center">Admiral Ackbar Relationship Expert</div>
+                </a>
+            
+                
+                <a href="/create/Advice-Dog" style="width: 150px; height: 150px; float: left; margin-top: 10px; margin-right: 10px">
+                    <div style="height: 100px"><img style="display: block; margin: 0 auto" src="https://apimeme.com/thumbnail?name=Advice-Dog"></div>
+                    <div style="text-align: center">Advice Dog</div>
+                </a>
+            
+                
+                <a href="/create/Advice-Doge" style="width: 150px; height: 150px; float: left; margin-top: 10px; margin-right: 10px">
+                    <div style="height: 100px"><img style="display: block; margin: 0 auto" src="https://apimeme.com/thumbnail?name=Advice-Doge"></div>
+                    <div style="text-align: center">Advice Doge</div>
+                </a>
+            
+                
+                <a href="/create/Advice-God" style="width: 150px; height: 150px; float: left; margin-top: 10px; margin-right: 10px">
+                    <div style="height: 100px"><img style="display: block; margin: 0 auto" src="https://apimeme.com/thumbnail?name=Advice-God"></div>
+                    <div style="text-align: center">Advice God</div>
+                </a>
+            
+                
+                <a href="/create/Advice-Peeta" style="width: 150px; height: 150px; float: left; margin-top: 10px; margin-right: 10px">
+                    <div style="height: 100px"><img style="display: block; margin: 0 auto" src="https://apimeme.com/thumbnail?name=Advice-Peeta"></div>
+                    <div style="text-align: center">Advice Peeta</div>
+                </a>
+            
+                
+                <a href="/create/Advice-Tam" style="width: 150px; height: 150px; float: left; margin-top: 10px; margin-right: 10px">
+                    <div style="height: 100px"><img style="display: block; margin: 0 auto" src="https://apimeme.com/thumbnail?name=Advice-Tam"></div>
+                    <div style="text-align: center">Advice Tam</div>
+                </a>
+            
+                
+                <a href="/create/Advice-Yoda" style="width: 150px; height: 150px; float: left; margin-top: 10px; margin-right: 10px">
+                    <div style="height: 100px"><img style="display: block; margin: 0 auto" src="https://apimeme.com/thumbnail?name=Advice-Yoda"></div>
+                    <div style="text-align: center">Advice Yoda</div>
+                </a>
+            
+                
+            
+                
+                <a href="/create/Afraid-To-Ask-Andy-Closeup" style="width: 150px; height: 150px; float: left; margin-top: 10px; margin-right: 10px">
+                    <div style="height: 100px"><img style="display: block; margin: 0 auto" src="https://apimeme.com/thumbnail?name=Afraid-To-Ask-Andy-Closeup"></div>
+                    <div style="text-align: center">Afraid To Ask Andy Closeup</div>
+                </a>
+            
+                
+                <a href="/create/Aint-Nobody-Got-Time-For-That" style="width: 150px; height: 150px; float: left; margin-top: 10px; margin-right: 10px">
+                    <div style="height: 100px"><img style="display: block; margin: 0 auto" src="https://apimeme.com/thumbnail?name=Aint-Nobody-Got-Time-For-That"></div>
+                    <div style="text-align: center">Aint Nobody Got Time For That</div>
+                </a>
+            
+                
+                <a href="/create/Alan-Greenspan" style="width: 150px; height: 150px; float: left; margin-top: 10px; margin-right: 10px">
+                    <div style="height: 100px"><img style="display: block; margin: 0 auto" src="https://apimeme.com/thumbnail?name=Alan-Greenspan"></div>
+                    <div style="text-align: center">Alan Greenspan</div>
+                </a>
+            
+                
+                <a href="/create/Alarm-Clock" style="width: 150px; height: 150px; float: left; margin-top: 10px; margin-right: 10px">
+                    <div style="height: 100px"><img style="display: block; margin: 0 auto" src="https://apimeme.com/thumbnail?name=Alarm-Clock"></div>
+                    <div style="text-align: center">Alarm Clock</div>
+                </a>
+            
+                
+                <a href="/create/Albert-Cagestein" style="width: 150px; height: 150px; float: left; margin-top: 10px; margin-right: 10px">
+                    <div style="height: 100px"><img style="display: block; margin: 0 auto" src="https://apimeme.com/thumbnail?name=Albert-Cagestein"></div>
+                    <div style="text-align: center">Albert Cagestein</div>
+                </a>
+            
+                
+                <a href="/create/Albert-Einstein-1" style="width: 150px; height: 150px; float: left; margin-top: 10px; margin-right: 10px">
+                    <div style="height: 100px"><img style="display: block; margin: 0 auto" src="https://apimeme.com/thumbnail?name=Albert-Einstein-1"></div>
+                    <div style="text-align: center">Albert Einstein 1</div>
+                </a>
+            
+                
+                <a href="/create/Alien-Meeting-Suggestion" style="width: 150px; height: 150px; float: left; margin-top: 10px; margin-right: 10px">
+                    <div style="height: 100px"><img style="display: block; margin: 0 auto" src="https://apimeme.com/thumbnail?name=Alien-Meeting-Suggestion"></div>
+                    <div style="text-align: center">Alien Meeting Suggestion</div>
+                </a>
+            
+                
+                <a href="/create/Alright-Gentlemen-We-Need-A-New-Idea" style="width: 150px; height: 150px; float: left; margin-top: 10px; margin-right: 10px">
+                    <div style="height: 100px"><img style="display: block; margin: 0 auto" src="https://apimeme.com/thumbnail?name=Alright-Gentlemen-We-Need-A-New-Idea"></div>
+                    <div style="text-align: center">Alright Gentlemen We Need A New Idea</div>
+                </a>
+            
+            
+                
+                <a href="/create/Alyssa-Silent-Hill" style="width: 150px; height: 150px; float: left; margin-top: 10px; margin-right: 10px">
+                    <div style="height: 100px"><img style="display: block; margin: 0 auto" src="https://apimeme.com/thumbnail?name=Alyssa-Silent-Hill"></div>
+                    <div style="text-align: center">Alyssa Silent Hill</div>
+                </a>
+            
+                
+                <a href="/create/Am-I-The-Only-One-Around-Here" style="width: 150px; height: 150px; float: left; margin-top: 10px; margin-right: 10px">
+                    <div style="height: 100px"><img style="display: block; margin: 0 auto" src="https://apimeme.com/thumbnail?name=Am-I-The-Only-One-Around-Here"></div>
+                    <div style="text-align: center">Am I The Only One Around Here</div>
+                </a>
+            
+                
+                <a href="/create/American-Chopper-Argument" style="width: 150px; height: 150px; float: left; margin-top: 10px; margin-right: 10px">
+                    <div style="height: 100px"><img style="display: block; margin: 0 auto" src="https://apimeme.com/thumbnail?name=American-Chopper-Argument"></div>
+                    <div style="text-align: center">American Chopper Argument</div>
+                </a>
+            
+                
+                <a href="/create/Ancient-Aliens" style="width: 150px; height: 150px; float: left; margin-top: 10px; margin-right: 10px">
+                    <div style="height: 100px"><img style="display: block; margin: 0 auto" src="https://apimeme.com/thumbnail?name=Ancient-Aliens"></div>
+                    <div style="text-align: center">Ancient Aliens</div>
+                </a>
+            
+                
+                <a href="/create/And-everybody-loses-their-minds" style="width: 150px; height: 150px; float: left; margin-top: 10px; margin-right: 10px">
+                    <div style="height: 100px"><img style="display: block; margin: 0 auto" src="https://apimeme.com/thumbnail?name=And-everybody-loses-their-minds"></div>
+                    <div style="text-align: center">And everybody loses their minds</div>
+                </a>
+            
+                
+                <a href="/create/And-then-I-said-Obama" style="width: 150px; height: 150px; float: left; margin-top: 10px; margin-right: 10px">
+                    <div style="height: 100px"><img style="display: block; margin: 0 auto" src="https://apimeme.com/thumbnail?name=And-then-I-said-Obama"></div>
+                    <div style="text-align: center">And then I said Obama</div>
+                </a>
+            
+                
+                <a href="/create/Angry-Asian" style="width: 150px; height: 150px; float: left; margin-top: 10px; margin-right: 10px">
+                    <div style="height: 100px"><img style="display: block; margin: 0 auto" src="https://apimeme.com/thumbnail?name=Angry-Asian"></div>
+                    <div style="text-align: center">Angry Asian</div>
+                </a>
+            
+                
+                <a href="/create/Angry-Baby" style="width: 150px; height: 150px; float: left; margin-top: 10px; margin-right: 10px">
+                    <div style="height: 100px"><img style="display: block; margin: 0 auto" src="https://apimeme.com/thumbnail?name=Angry-Baby"></div>
+                    <div style="text-align: center">Angry Baby</div>
+                </a>
+            
+                
+                <a href="/create/Angry-Birds-Pig" style="width: 150px; height: 150px; float: left; margin-top: 10px; margin-right: 10px">
+                    <div style="height: 100px"><img style="display: block; margin: 0 auto" src="https://apimeme.com/thumbnail?name=Angry-Birds-Pig"></div>
+                    <div style="text-align: center">Angry Birds Pig</div>
+                </a>
+            
+        </div>
+    
+    </div>
+
+</div>
+<script>
+    function toDataURL(url) {
+        return fetch(url).then((response) => {
+                return response.blob();
+            }).then(blob => {
+                return URL.createObjectURL(blob);
+            });
+    }
+
+    async function downloadImage(link) {
+        const a = document.createElement("a");
+        a.href = await toDataURL(link);
+        a.download = "";
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+    }
+
+    async function download() {
+        const link = getLink();
+        await downloadImage(link);
+    }
+
+    function getLink() {
+        return "/meme?" + $.param({
+            "meme" : $("#meme").val(),
+            "top" : $("#top-text").val(),
+            "bottom" : $("#bottom-text").val()
+        });
+
+    }
+    function update() {
+        const link = getLink();
+        $("#meme-image").attr("src", link);
+        $("#api-link").val(window.origin + link).parent().show();
+    }
+    $("form").change(function() {
+        update();
+    }).submit(function() {
+        update();
+        return false;
+    });
+
+    
+    update();
+    
+</script>
+
+<div class="container">
+    <hr/>
+   
+</div>
+</body>
+</html>
