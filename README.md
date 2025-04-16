@@ -3,7 +3,7 @@
 
 ## Description
 
-Our website is a Meme Generator that lets you create custom memes easily. You can choose a meme image from our collection, add your own top and bottom text, and generate a unique meme. If you prefer, you can also upload your own image and add personalized text to it. Once your meme is ready, you can download it to share with friends or use it however you like. You can also regenerate the text on the same image if you want to try different captions, making it easy to create multiple versions of your meme.
+My website is a Meme Generator that lets you create custom memes easily. You can choose a meme image from my collection, add your own top and bottom text, and generate a unique meme. If you prefer, you can also upload your own image and add personalized text to it. Once your meme is ready, you can download it to share with friends or use it however you like. You can also regenerate the text on the same image if you want to try different captions, making it easy to create multiple versions of your meme.
 
 ## Features and Functionalities
 
