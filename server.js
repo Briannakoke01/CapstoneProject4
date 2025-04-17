@@ -1,12 +1,13 @@
-require('dotenv').config(); // Load environmental variables from .env
-const express = require('express');
-const fetch = require('node-fetch');
+import dotenv from 'dotenv';
+import express from 'express';
+import fetch from 'node-fetch';
+
+dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 const API_URL = process.env.API_URL;
 
-// Route to fetch meme templates
 app.get('/memes', async (req, res) => {
   try {
     const response = await fetch(API_URL);
@@ -20,7 +21,6 @@ app.get('/memes', async (req, res) => {
   }
 });
 
-// Start the server
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
