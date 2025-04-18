@@ -8,6 +8,9 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const API_URL = process.env.API_URL;
 
+// Serve static files (like favicon)
+app.use(express.static(path.join(__dirname, 'public')));
+
 app.get('/memes', async (req, res) => {
   try {
     const response = await fetch(API_URL);
