@@ -1,14 +1,15 @@
 import dotenv from 'dotenv';
 import express from 'express';
 import fetch from 'node-fetch';
+import path from 'path'
 
 dotenv.config(); // This should work now with import syntax
-
 const app = express();
 const PORT = process.env.PORT || 3000;
 const API_URL = process.env.API_URL;
-
+const __dirname = path.resolve();
 // Serve static files (like favicon)
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/memes', async (req, res) => {
