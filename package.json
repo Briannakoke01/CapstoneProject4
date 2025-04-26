@@ -2,7 +2,7 @@
   "type": "module",
   "name": "downloads",
   "version": "1.0.0",
-  "description": "API Link: (https://apimeme.com/?ref=apilist.fun)",
+  "description": "API Link: (https://api.imgflip.com/caption_image)",
   "main": "EL.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
