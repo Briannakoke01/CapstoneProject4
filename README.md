@@ -12,6 +12,8 @@ My website is a Meme Generator that lets you create custom memes easily. You can
 3. **Generate Meme Image:** After entering the top and bottom text, click the "Generate" button to create the meme.
 4. **Download Meme:** Once your meme is generated, you can download the image for future use or sharing.
 
+My API link no longer exists so it does not pull the data properly, this is out of my control.
+
 ## Test Cases
    First, run this command in the terminal to install Cypress globally:
 
